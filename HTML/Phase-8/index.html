@@ -6,6 +6,30 @@
     <title>Formulaire</title>
 </head>
 <body>
-    
+    <p>* Ces Zones sont obligatoires</p>
+
+    <caption>Vos coordonnées</caption><br>
+    <form action="http://bienvu.net/script.php" method="get"></form>
+    <label for="nom">Votre nom* :</label>
+    <input type="text" name="nom" id="nom" required>
+<br>
+    <label for="prénom">Votre prénom* :</label>
+    <input type="text" name="prénom" id="prénom" required>
+<br>
+<br>
+    <label for="sexe">Sexe* :</label>
+    <input type="radio" name="sexe" id="sexe" value="Féminin" required>Féminin
+    <input type="radio" name="sexe" id="sexe" value="Masculin" required>Masculin
+<br>
+<br>
+    <label for="date">Date de naissance* :</label>
+    <input type="date" name="date" id="date" required>
+<br>
+    <label for="code">Code postal* :</label>
+    <input type="text" name="code" id="code" required>
+<br>
+    <label for="add">Adresse :</label>
+    <input type="add" name="add" id="date" >
+
 </body>
 </html>
