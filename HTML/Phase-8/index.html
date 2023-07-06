@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
 </head>
+
 <body>
     <p>* Ces Zones sont obligatoires</p>
     <form action="http://bienvu.net/script.php" method="post">
-<fieldset>
-    <legend>Vos coordonnées</legend><br>
-    
-    <label for="nom">Votre nom* :</label>
-    <input type="text" name="nom" id="nom" required>
-<br>
-    <label for="prénom">Votre prénom* :</label>
-    <input type="text" name="prénom" id="prénom" required>
-<br>
-<br>
-    <label for="sexe">Sexe* :</label>
-    <input type="radio" name="sexe" id="sexe" value="Féminin" required>Féminin
-    <input type="radio" name="sexe" id="sexe" value="Masculin" required>Masculin
-<br>
-<br>
-    <label for="date">Date de naissance* :</label>
-    <input type="date" name="date" id="date" required >
-<br>
-    <label for="code">Code postal* :</label>
-    <input type="text" name="code" id="code" required>
-<br>
-    <label for="add">Adresse :</label>
-    <input type="add" name="add" id="add">
-<br>
-    <label for="ville">Ville :</label>
-    <input type="text" name="ville" id="ville">
-<br>
-    <label for="email">Email* :</label>
-    <input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
-<br>
-</fieldset>    
-<br>
+        <fieldset>
+            <legend>Vos coordonnées</legend><br>
 
-<fieldset>
-    <legend>Votre demande</legend>
-    
-    <label for="sujets">Sujet* :</label>
-    <select id="sujets"required>
-        <option value="" disabled selected>Veuillez séléctionner un sujet</option>
-        <option value="com">Mes commandes</option>
-        <option value="qsp">Question sur un produit</option>
-        <option value="r">Réclamation</option>
-        <option value="autre">Autres</option>
-    </select>
-<br>
-    <label for="qs">Votre question* :</label>
-    <textarea name="commentaire" cols="50"required></textarea>
-</fieldset>
+            <label for="nom">Votre nom* :</label>
+            <input type="text" name="nom" id="nom" required>
+            <br>
+            <label for="prénom">Votre prénom* :</label>
+            <input type="text" name="prénom" id="prénom" required>
+            <br>
+            <br>
+            <label for="sexe">Sexe* :</label>
+            <input type="radio" name="sexe" id="sexe" value="Féminin" required>Féminin
+            <input type="radio" name="sexe" id="sexe" value="Masculin" required>Masculin
+            <br>
+            <br>
+            <label for="date">Date de naissance* :</label>
+            <input type="date" name="date" id="date" required>
+            <br>
+            <label for="code">Code postal* :</label>
+            <input type="text" name="code" id="code" required>
+            <br>
+            <label for="add">Adresse :</label>
+            <input type="add" name="add" id="add">
+            <br>
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville">
+            <br>
+            <label for="email">Email* :</label>
+            <input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
+            <br>
+        </fieldset>
+        <br>
 
-<br>
-    <input type="checkbox" name="tif" id="tif" required>
-    <label for="tif">* J'accepte le traitement informatique de ce formulaire</label>
-<br>
-<br>    
-    <button>Envoyer</button>
-    <button type="reset">Annuler</button>
-</form>
+        <fieldset>
+            <legend>Votre demande</legend>
+
+            <label for="sujets">Sujet* :</label>
+            <select id="sujets" required>
+                <option value="" disabled selected>Veuillez séléctionner un sujet</option>
+                <option value="com">Mes commandes</option>
+                <option value="qsp">Question sur un produit</option>
+                <option value="r">Réclamation</option>
+                <option value="autre">Autres</option>
+            </select>
+            <br>
+            <label for="qs">Votre question* :</label>
+            <textarea name="commentaire" cols="50" required></textarea>
+        </fieldset>
+
+        <br>
+        <input type="checkbox" name="tif" id="tif" required>
+        <label for="tif">* J'accepte le traitement informatique de ce formulaire</label>
+        <br>
+        <br>
+        <button>Envoyer</button>
+        <button type="reset">Annuler</button>
+    </form>
 </body>
+
 </html>
