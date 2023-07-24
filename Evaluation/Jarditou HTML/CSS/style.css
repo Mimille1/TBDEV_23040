@@ -32,7 +32,6 @@ display: inline-block;
 #accueil {
     display: flex;
     width: 100%;
-
 }
 
 .acceuilp {
@@ -58,6 +57,4 @@ display: inline-block;
     body{
         font-size: small;  
      }
-
-    
 }
