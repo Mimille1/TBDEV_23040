@@ -1,12 +1,10 @@
-var nombre = window.prompt("Saissisez un nombre 1") ;
+var n = window.prompt("Saissisez un nombre 1") ;
 var x = window.prompt("Saissisez un nombre 2") ;
-var multiple = (nombre * x) ;
+var multiple = 0 ;
+var a = 0;
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
-}
-
-while (condition) {
-    
+for (let i = 0; i < n; i++) {
+    a = a+1;
+    multiple = a * Number(x) ;
+    document.write(a + " * " + x + " = " + multiple + "<br>") ;
 }
