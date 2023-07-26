@@ -1,11 +1,10 @@
-var str1 ; /*chaine de mot*/
-var str2 ;
-var n = window.produit("Saississez un nombre") ;
+const str1 = "robert ;dupont ;amiens ;80000 ";
+const str2 = ";";
+var n = window.prompt("Emplacement du mot souhaiter");
 
-function strtok(str1, ";" , n) {
-    ...   
+function strtok(str1, str2, n) {
+    const a = str1.split(str2);
+    window.alert(a[n-1]);
 }
 
-function str2.strtok(n) {
-    return n ;    
-}
+strtok(str1,str2,n);
