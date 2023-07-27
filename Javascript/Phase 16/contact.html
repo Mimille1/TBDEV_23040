@@ -9,74 +9,82 @@
 </head>
 
 <body>
+    <script src="ASSETS/Javascript/formulaire.js" defer></script>
 
     <h1>Contact</h1>
 
-    <p>* Ces Zones sont obligatoires</p>
-    <form action="http://bienvu.net/script.php" method="post">
+    <legend>Vos coordonnées</legend><br>
 
+    <p>* Ces Zones sont obligatoires pour envoyer le formulaire.</p>
 
-        <legend>Vos coordonnées</legend><br>
+    <div class="formulaire">
+        <form id="form1" action="http://bienvu.net/script.php" method="post">
 
-        <label for="nom">Société* :</label>
-        <input type="text" name="société" id="société" required>
-        <br>
-        <br>
-        <label for="prénom">Personne à contacter* :</label>
-        <input type="text" name="prénom" id="prénom" required>
-        <br>
-        <br>
-        <label for="question">Adresse de l'entreprise* :</label>
-        <textarea name="commentaire" id="question" cols="50" required></textarea>
-        <br>
-        <br>
-        <label for="code">Code postal* :</label>
-        <input type="text" name="code" id="code" required>
-        <br>
-        <br>
-        <label for="ville">Ville :</label>
-        <input type="text" name="ville" id="ville">
-        <br>
-        <br>
-        <label for="email">Email* :</label>
-        <input type="email" name="email" id="email" required>
-        <br>
-        <br>
-        <label for="tel">Téléphone :</label>
-        <input type="tel" name="tel" id="tel">
-        <br>
-        <br>
+            <div class=" Soci">
+                <label for="societe">Société* :</label>
+                <input type="text" name="société" id="societe">
+            </div>
 
+            <div class=" p.contact">
+                <label for="p.contact">Personne à contacter* :</label>
+                <input type="text" name="p.contact" id="p.contact">
+            </div>
 
+            <div class="add">
+                <label for="question">Adresse de l'entreprise* :</label>
+                <textarea name="commentaire" id="question" cols="50"></textarea>
+            </div>
 
+            <div class="code.p">
+                <label for="code">Code postal* :</label>
+                <input type="text" name="code" id="code">
+            </div>
 
+            <div class="ville">
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville">
+            </div>
 
+            <div class="email">
+                <label for="email">Email* :</label>
+                <input type="email" name="email" id="email">
+            </div>
 
+            <div class="tele">
+                <label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
 
-        <fieldset>
-            <legend>Votre demande</legend>
+            <div class="envie">
+               <label for="environnement">Sélectionnez l'environnement technique du projet :</label>
+               <textarea name="environnement" id="environnement" cols="50"></textarea>
+            </div>
 
-            <label for="sujets">Sujet* :</label>
-            <select id="sujets" required>
-                <option value="" disabled selected>Veuillez séléctionner un sujet</option>
-                <option value="com">Mes commandes</option>
-                <option value="qsp">Question sur un produit</option>
-                <option value="r">Réclamation</option>
-                <option value="autre">Autres</option>
+            <div class="choisir">
+            <select id="choisir">
+                <option value="" disabled selected>Choisissez</option>
+                <option value="Access">Access</option>
+                <option value="Java">Java</option>
+                <option value="Delphi">Delphi</option>
+                <option value="Windev">Windev</option>
+                <option value="Visual Basic">Visual Basic</option>
+                <option value="Power Builder">Power Builder</option>
+                <option value="Internet">Internet</option>
+                <option value="Intranet">Intranet</option>
+                <option value="Windows NT">Windows NT</option>
+                <option value="Unix">Unix</option>
+                <option value="SQL Server">SQL Server</option>
+                <option value="Oracle">Oracle</option>
+                <option value="Autres.">Autres ...</option>
             </select>
-            <br>
-            <label for="question">Votre question* :</label>
-            <textarea name="commentaire" id="question" cols="50" required></textarea>
-        </fieldset>
+            </div>
 
-        <br>
-        <input type="checkbox" name="tif" id="tif" required>
-        <label for="tif">* J'accepte le traitement informatique de ce formulaire</label>
-        <br>
-        <br>
-        <button>Envoyer</button>
-        <button type="reset">Annuler</button>
-    </form>
+            <input type="submit" id="button1">Envoyer
+            <input type="reset">Effacer
+        </form>
+    </div>
+
+    
 </body>
 
 </html>
