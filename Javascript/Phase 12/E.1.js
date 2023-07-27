@@ -15,6 +15,7 @@ for (let i = 0; i < a; i++) {
     console.log(somme) ;
 }
 
+console.table(tableau) ;
 var moyenne = Number(somme) / Number(a) ;
 document.write("Vous avez saisie " + Number(a) + "valeurs" + "<br>") ;
 document.write("La somme des valeurs est égales à " + Number(somme) + "<br>") ;
