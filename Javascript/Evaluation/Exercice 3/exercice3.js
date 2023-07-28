@@ -1,16 +1,15 @@
 const tableau = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
 var arret = "";
+var prenom = 1;
 
-while (arret != "0") {
-    var prenom = window.prompt("Saissisezr un prénom");
-    var verif = tableau.indexOf(prenom);
-    
-    if (verif != -1) {
-        tab.splice(verif, 1);
-        tab.push(' ');
-    }
-    if (verif == -1){
-        arret = window.prompt('La valeur est incorrect . Ecrivez "0" pour arrêter');
+while (prenom != "0") {
+    prenom = window.prompt("Saissisezr un prénom\n0 Pour arrêter la recherche");
+    if (prenom != 0) {
+        if (tableau.indexOf(prenom) != -1) {
+            tableau.splice(tableau.indexOf(prenom), 1);
+            tableau.push(' ');
+        }
+        console.table(tableau);
     }
 }
-console.table(tab);
+    console.table(tableau);
