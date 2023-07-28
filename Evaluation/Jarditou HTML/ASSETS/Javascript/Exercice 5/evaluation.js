@@ -41,7 +41,7 @@ form.querySelector('#button1').onclick = function (e) {
         e.preventDefault();
     }
 
-    if (form.elements['checkbox'].value == '') {
+    if (form.elements['tif'].checked == false) {
         window.alert('Veuillez accepter le traitement informatique de ce formulaire.');
         e.preventDefault();
     }
