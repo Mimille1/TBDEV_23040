@@ -1,33 +1,38 @@
-var PAP = 0 ;
-var REM = 0 ;
-var PORT = 0 ;
-var TOT = 0 ;
-var QTECOM = 0 ;
-var ARRET = "" ;
-var PU = 0 ;
+var PAP;
+var REM = 0;
+var PORT = 0;
+var TOT = 0;
+var QTECOM = 0;
+var PU = 0;
 
-//while (ARRET != "STOP") {
-    PU = window.prompt("Saissisez le prix de l'article") ;
-    QTECOM = window.prompt("Saissisez le nombre d'article") ;
-    TOT = (PU * QTECOM) ;
-    document.write(TOT1) ;
-   // ARRET = window.prompt("Si il n'y a plus d'article, Saissisez 'STOP'") ;
-//}
+PU = window.prompt("Saissisez le prix de l'article");
+QTECOM = window.prompt("Saissisez le nombre d'article");
+TOT = (PU * QTECOM); 
 
 if (TOT >= 100 && TOT <= 200) {
-    TOT = TOT * 95/ 100 ;
-    PORT = TOT * 2/100
+    REM = TOT * (5 / 100);
+    console.log(REM);
+    PORT = TOT * (2 / 100);
+    console.log(PORT);
 }
 else if (TOT > 200 && TOT > 500) {
-    TOT = TOT * 90 / 100 ;
-    PORT = TOT * 2 / 100 ;    
+    REM = TOT * (10 / 100);
+    console.log(REM);
+    PORT = TOT * (2 / 100);
+    console.log(PORT);
 }
 
-if (PORT > 6 ) {
-    TOT = TOT + PORT
-}
-else{
-    TOT = TOT + 6 ;
+if (TOT < 500) {
+    if (PORT > 6) {
+        PAP = (TOT-REM) + PORT;
+        console.log(PAP);
+    }
+    else {
+        PAP = (TOT-REM) + 6;
+    }
+    
+}else{
+    PAP=TOT-REM;
 }
 
-window.alert("Le prix total est de " + TOT + "€")
+window.alert("Le prix total est de " + PAP + "€");
