@@ -1,6 +1,7 @@
 var filtre = RegExp("^[a-zA-Z0-9]+$");
-var filtrepc = RegExp("^[a-zA-Z]+$");
-var filtremail = RegExp("^[A-Za-z0-9.-]+@[A-Za-z0-9.-]{2,}.[A-Za-z]{2,4}$")
+var filtrepc = RegExp("^[a-zA-Z]$");
+var filtrecp = RegExp('^[0-9]{5}$');
+var filtremail = RegExp("^[A-Za-z0-9.-]+@[A-Za-z0-9.-]{2,}.[A-Za-z]{2,4}$");
 var form = document.getElementById('form1');
 
 
@@ -12,7 +13,7 @@ form.querySelector('#button1').onclick = function (e) {
         window.alert('La société est mal renseignée');
         e.preventDefault();
     }
-    
+
     if (form.elements['p.contact'].value == '') {
         window.alert('Veuillez renseigner la personne à contacter.');
         e.preventDefault();
@@ -21,10 +22,10 @@ form.querySelector('#button1').onclick = function (e) {
         e.preventDefault();
     }
 
-    if (form.elements['code.p'].value == '') {
+    if (form.elements['code'].value == '') {
         window.alert('Veuillez renseigner le code postal.');
         e.preventDefault();
-    } else if (filtrepc.test(form.elements['code.p'].value == false)) {
+    } else if (filtrecp.test(form.elements['code'].value) == false) {
         window.alert('Le code postal est mal renseignée.');
         e.preventDefault();
     }
@@ -40,7 +41,7 @@ form.querySelector('#button1').onclick = function (e) {
     if (form.elements['email'].value == '') {
         window.alert('Veuillez renseigner votre email.');
         e.preventDefault();
-    } else if (filtrepc.test(form.elements['email'].value == false)) {
+    } else if (filtremail.test(form.elements['email'].value) == false) {
         window.alert('Votre email est mal renseignée.');
         e.preventDefault();
     }
