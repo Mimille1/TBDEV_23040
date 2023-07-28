@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="ASSETS/CSS/style.css">
 </head>
 <body>
+    <script src="ASSETS/Javascript/Exercice 5/evaluation.js" defer></script>
     <header>
         <div class="logo">
             <img src="ASSETS/img/jarditou_logo.jpg" alt="jarditou_logo" width="500" height="200">
@@ -29,28 +30,28 @@
     <hr>
 
     <p>* Ces Zones sont obligatoires</p>
-    <form action="http://bienvu.net/script.php" method="post">
+    <form action="http://bienvu.net/script.php" id="form1" method="post">
 <fieldset>
     <legend>Vos coordonnées</legend><br>
     
     <label for="nom">Votre nom* :</label>
-    <input type="text" name="nom" id="nom" required>
+    <input type="text" name="nom" id="nom">
 <br>
     <label for="prénom">Votre prénom* :</label>
-    <input type="text" name="prénom" id="prénom" required>
+    <input type="text" name="prénom" id="prénom">
 <br>
 <br>
     <label for="sexef">Sexe* :</label>
-    <input type="radio" name="sexef" id="sexef" value="Féminin" required>Féminin
+    <input type="radio" name="sexef" id="sexef" value="Féminin">Féminin
     <label for="sexem">Sexe* :</label>
-    <input type="radio" name="sexem" id="sexem" value="Masculin" required>Masculin
+    <input type="radio" name="sexem" id="sexem" value="Masculin">Masculin
 <br>
 <br>
     <label for="date">Date de naissance* :</label>
-    <input type="date" name="date" id="date" required >
+    <input type="date" name="date" id="date">
 <br>
     <label for="code">Code postal* :</label>
-    <input type="text" name="code" id="code" required>
+    <input type="text" name="code" id="code">
 <br>
     <label for="add">Adresse :</label>
     <input type="text" name="add" id="add">
@@ -59,7 +60,7 @@
     <input type="text" name="ville" id="ville">
 <br>
     <label for="email">Email* :</label>
-    <input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
+    <input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr">
 <br>
 </fieldset>    
 <br>
@@ -68,7 +69,7 @@
     <legend>Votre demande</legend>
     
     <label for="sujets">Sujet* :</label>
-    <select id="sujets" required>
+    <select id="sujets">
         <option value="" disabled selected>Veuillez séléctionner un sujet</option>
         <option value="com">Mes commandes</option>
         <option value="qsp">Question sur un produit</option>
@@ -77,16 +78,16 @@
     </select>
 <br>
     <label for="question">Votre question* :</label>
-    <textarea name="commentaire" id="question" cols="50" required></textarea>
+    <textarea name="commentaire" id="question" cols="50"></textarea>
 </fieldset>
 
 <br>
-    <input type="checkbox" name="tif" id="tif" required>
+    <input type="checkbox" name="tif" id="tif">
     <label for="tif">* J'accepte le traitement informatique de ce formulaire</label>
 <br>
 <br>    
-    <button>Envoyer</button>
-    <button type="reset">Annuler</button>
+    <input type="submit" value="envoyer">
+    <input type="reset" value="annuler">
 </form>
 <hr>
 <footer>
