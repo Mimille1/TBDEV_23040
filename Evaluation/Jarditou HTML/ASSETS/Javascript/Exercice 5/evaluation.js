@@ -1,3 +1,5 @@
+var form=document.getElementById('form1');
+
 form.querySelector('#button1').onclick = function (e) {
     if (form.elements['nom'].value == '') {
         window.alert('Veuillez renseigner votre nom.');
@@ -9,7 +11,7 @@ form.querySelector('#button1').onclick = function (e) {
         e.preventDefault();
     }
 
-    if (form.elements['sexef' + 'sexem'].value == '') {
+    if (form.elements['sexe'].value == '') {
         window.alert('Veuillez renseigner votre sexe.');
         e.preventDefault();
     }
